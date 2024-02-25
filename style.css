@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --primary-white : hsl(0, 0%, 100%);
+    --primary-grey: hsl(0, 0%, 20%);
+    --primary-dark-Grey: hsl(0, 0%, 12%);
+    --primary-off-Black: hsl(0, 0%, 8%);
+    --primary-green: hsl(75, 94%, 57%);
+    --font:  "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-off-Black)
+}
+
+.profile{
+    padding: 25px;
+    background-color: var(--primary-dark-Grey);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.profile_comp{
+    width:80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_img{
+    width: 100%;
+}
+
+.name{
+    font-family: var(--font);
+    color: var(--primary-white);
+    font-weight: 600;
+    font-size:20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.location{
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--primary-green);
+    font-size: small;
+    text-align: center;
+}
+
+.tagline{
+    margin: 15px 0;
+    font-family: var(--font);
+    color: var(--primary-white);
+    font-weight: 400;
+    font-size:12px;
+    padding: 0px 20px;
+}
+
+.social_links{
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    width: 100%;
+    background-color: var(--primary-grey);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: small;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+    }
+}
